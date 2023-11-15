@@ -18,7 +18,9 @@ var corsOptions = {
   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
   "optionsSuccessStatus": 204
 };
-app.use(cors(corsOptions));
+
+// Configure CORS
+app.use(cors());
 
 // Create GET to return a list of all pies
 router.get('/', function (req, res, next) {
