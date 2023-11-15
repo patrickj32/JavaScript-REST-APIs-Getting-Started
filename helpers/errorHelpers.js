@@ -1,5 +1,7 @@
 // const logRepo = require("../repos/logRepo");
 
+const logRepo = require("../repos/logRepo");
+
 let errorHelpers = {
   logErrors: function (err, req, res, next) {
     let errorObject = errorHelpers.errorBuilder(err);
